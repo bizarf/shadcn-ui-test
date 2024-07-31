@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
@@ -42,9 +43,11 @@ const Login = () => {
                             </div>
                             <Input id="password" type="password" required />
                         </div>
-                        <Button type="submit" className="w-full">
-                            Login
-                        </Button>
+                        <Link to={"/dash"}>
+                            <Button type="submit" className="w-full">
+                                Login
+                            </Button>
+                        </Link>
                         <Button variant="outline" className="w-full">
                             Login with Google
                         </Button>

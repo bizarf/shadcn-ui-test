@@ -18,7 +18,7 @@ import {
 const NavBar = () => {
     return (
         <>
-            <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+            <aside className="fixed left-0 top-14 bottom-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
                 <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
                     <Link
                         to="#"
@@ -32,7 +32,7 @@ const NavBar = () => {
                             <TooltipTrigger asChild>
                                 <Link
                                     to="#"
-                                    className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
+                                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                                 >
                                     <Home className="h-5 w-5" />
                                     <span className="sr-only">Dashboard</span>
@@ -48,10 +48,10 @@ const NavBar = () => {
                             <TooltipTrigger asChild>
                                 <Link
                                     to="#"
-                                    className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
+                                    className="flex flex-col items-center gap-1 text-muted-foreground hover:text-foreground"
                                 >
                                     <ShoppingCart className="h-5 w-5" />
-                                    <span className="sr-only">Orders</span>
+                                    <span className="text-xs">Orders</span>
                                 </Link>
                             </TooltipTrigger>
                             <TooltipContent side="right">Orders</TooltipContent>
